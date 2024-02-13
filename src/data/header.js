@@ -18,11 +18,11 @@ export const headerMenus = [
       icon: <CiBaseball />,
       src: "/"
   },
-//   {
-//       title: "추천 영상",
-//       icon: <CiMoneyBill />,
-//       src: "/today"
-//   },
+  {
+      title: "추천 영상",
+      icon: <CiMoneyBill />,
+      src: "/today"
+  },
 //   {
 //       title: "추천 개발자",
 //       icon: <CiCoins1 />,

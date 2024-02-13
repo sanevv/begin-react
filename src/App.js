@@ -6,6 +6,7 @@ const Home = lazy(() => import('./pages/Home'));
 const Gsap = lazy(() => import('./pages/Gsap'));
 const Youtube = lazy(() => import('./pages/Youtube'));
 const Portfolio = lazy(() => import('./pages/Portfolio'));
+const Today = lazy(() => import('./pages/Today'));
 const Not = lazy(() => import('./pages/Not'));
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
             <Route path='/gsap' element={<Gsap />} />
             <Route path='/Portfolio' element={<Portfolio />} />
             <Route path='/youtube' element={<Youtube />} />
+            <Route path='/today' element={<Today />} />
             <Route path='*' element={<Not />} />
         </Routes>
     </Suspense>
