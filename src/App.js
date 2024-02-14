@@ -7,6 +7,7 @@ const Gsap = lazy(() => import('./pages/Gsap'));
 const Youtube = lazy(() => import('./pages/Youtube'));
 const Portfolio = lazy(() => import('./pages/Portfolio'));
 const Today = lazy(() => import('./pages/Today'));
+const Intro = lazy(() => import('./pages/Intro'));
 const Not = lazy(() => import('./pages/Not'));
 
 const App = () => {

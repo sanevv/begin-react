@@ -1,8 +1,13 @@
 import React from 'react'
 import Main from '../components/section/Main'
-
 import { todayText } from '../data/today'
 import { Link } from 'react-router-dom'
+
+import { Navigation, Pagination, Scrollbar, Autoplay, A11y } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 const Today = () => {
     return (
@@ -13,7 +18,27 @@ const Today = () => {
             <section id='todayPage'>
                 <h2>🥰 오늘의 추천 영상입니다.</h2>
 
+                <Swiper
+                    slidesPerView={2.5}
+                    spaceBetween={15}
+                    navigation={true}
+                    autoplay={{
+                        delay: 5000,
+                        disableOnInteraction: false,
+                    }}
+                    breakpoints={{
+                        320: {
+                            slidesPerView: 2,
+                        },
+                        1024: {
+                            slidesPerView: 4,
+                        },
+                    }}
+                    modules={[Navigation, Autoplay, Pagination]}
+                    className='mySwiper'
+                >
                 {todayText.map((today, key) => (
+                    <SwiperSlide>
                     <div className='today__inner' key={key}>
                         <div className='today__thumb play__icon'>
                             <Link to={today.page}>
@@ -34,7 +59,9 @@ const Today = () => {
                             </div>
                         </div>
                     </div>
+                    </SwiperSlide>
                 ))}
+                </Swiper>
             </section>
         </Main>
     )

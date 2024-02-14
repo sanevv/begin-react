@@ -11,8 +11,7 @@ const Header = () => {
     <header id='header' role='banner'>
         <h1 className='header__logo'>
             <a href='/'>
-                <em aria-hidden='true'></em>
-                <span>webs<br />youtube</span>
+                <span>React Project</span>
             </a>
         </h1>
 
@@ -26,7 +25,7 @@ const Header = () => {
                     </li>
                 ))}
             </ul>
-            <ul className='keyword'>
+            {/* <ul className='keyword'>
                 {searchKeyword.map((keyword, key) => (
                     <li key={key} className={location.pathname === keyword.src ? 'active' : ''}>
                         <Link to={keyword.src}>
@@ -34,7 +33,7 @@ const Header = () => {
                         </Link>
                     </li>
                 ))}
-            </ul>
+            </ul> */}
         </div>
         <div className='header__sns'>
             <ul>
