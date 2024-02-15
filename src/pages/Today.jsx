@@ -3,7 +3,7 @@ import Main from '../components/section/Main'
 import { todayText } from '../data/today'
 import { Link } from 'react-router-dom'
 
-import { Navigation, Pagination, Scrollbar, Autoplay, A11y } from 'swiper/modules';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';

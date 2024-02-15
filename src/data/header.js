@@ -14,30 +14,30 @@ import { AiOutlineInstagram } from "react-icons/ai";
 
 export const headerMenus = [
     {
-        title: "REACT",
+        title: "HOME",
         icon: <CiBaseball />,
         src: "/"
     },
     {
-        title: "추천 영상",
+        title: "Swiper",
         icon: <CiMoneyBill />,
         src: "/today"
     },
-    {
-        title: "GSAP Parallax",
-        icon: <CiCoffeeCup />,
-        src: "/gsap"
-    },
+    // {
+    //     title: "GSAP Parallax",
+    //     icon: <CiCoffeeCup />,
+    //     src: "/gsap"
+    // },
     {
         title: "포트폴리오",
         icon: <CiDumbbell />,
         src: "/portfolio"
     },
-    {
-        title: "유튜브 클론 사이트",
-        icon: <CiFries />,
-        src: "/youtube"
-    },
+    // {
+    //     title: "유튜브 클론 사이트",
+    //     icon: <CiFries />,
+    //     src: "/youtube"
+    // },
 ];
 
 export const searchKeyword = [
